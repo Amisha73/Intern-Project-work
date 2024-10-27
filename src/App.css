@@ -1,0 +1,64 @@
+/* write your css here */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  color: rgb(57, 55, 55);
+  font-weight: 600;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-button {
+  transition: 0.8s;
+}
+.header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+.header nav ul li:hover {
+  color: rgb(34, 34, 34);
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+.education-card {
+  transition: transform 0.3s ease;
+}
+.education-card:hover {
+  transform: scale(1.02);
+}
+
+.image-transition:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+.skillsLevel {
+  background-image: linear-gradient(145deg, #fff, #ff014f);
+  border: 2px solid gainsboro;
+  height: 10px;
+}
+.resumeColor:hover {
+  background-image: linear-gradient(145deg, #ff014f, #d11414);
+}
+
+.blog-card {
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: scale(1.02);
+}
+/* // bg-gradient-to-r from-pink-500 to-red-500 */
