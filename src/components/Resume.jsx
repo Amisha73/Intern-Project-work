@@ -10,7 +10,7 @@ const Resume = () => {
     switch (activeTab) {
       case "Education":
         return (
-          <div className="flex flex-col lg:flex-row lg:space-x-11 lg:px-20 px-5">
+          <div className="flex flex-col lg:flex-row lg:space-x-11 lg:px-20 px-5 ">
             <div className="flex-1 mb-8">
               <p className="text-[14px] mb-2 text-pink-600">2007 - 2010</p>
               <h2 className="text-3xl lg:text-xl font-semibold mb-4">

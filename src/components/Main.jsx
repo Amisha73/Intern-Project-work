@@ -50,20 +50,20 @@ const Main = () => {
           </div>
           
           {/* Download CV and Contact Buttons */}
-          <div className="p-6 sm:p-8 md:p-9 mt-6 border-transparent shadow-lg rounded-md bg-gray-100 drop-shadow-lg">
+          <div className="p-6 sm:p-8 md:p-9 mt-12 border-transparent shadow-lg rounded-md bg-gray-100 drop-shadow-lg">
             <h2 className="text-[16px] sm:text-[18px] mb-6 text-gray-600">
               Download my curriculum vitae:
             </h2>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to="/buy-now"
-                className="text-pink-500 hover:text-white bg-gray-100 hover:bg-red-500 p-3 text-center border-transparent shadow-lg rounded-md"
+                to="/#"
+                className="text-pink-500 hover:text-white bg-gray-100 resumeColor p-3 text-center border-transparent shadow-lg rounded-md"
               >
                 DOWNLOAD CV
               </Link>
               <Link
-                to="/buy-now"
-                className="text-pink-500 hover:text-white bg-gray-100 hover:bg-red-500 p-3 text-center border-transparent shadow-lg rounded-md"
+                to="/contact"
+                className="text-pink-500 hover:text-white bg-gray-100 resumeColor p-3 text-center border-transparent shadow-lg rounded-md"
               >
                 CONTACT ME
               </Link>
