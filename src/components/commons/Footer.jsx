@@ -3,7 +3,7 @@ import React from "react";
 import logo from "../../Images/logo-dark.png";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import '../../App.css'
+import "../../App.css";
 
 const Footer = () => {
   return (
@@ -34,7 +34,9 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row md:space-x-20 mt-6 md:mt-0">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-pink-600 capitalize text-2xl font-semibold">Product</h2>
+            <h2 className="text-pink-600 capitalize text-2xl font-semibold">
+              Product
+            </h2>
             <ul className="text-gray-500 space-y-4 mt-3">
               <li className="hover:bg-white hover:text-gray-700 header-button">
                 <Link to="/database">Database</Link>
@@ -55,7 +57,9 @@ const Footer = () => {
           </div>
 
           <div className="mb-6 md:mb-0">
-            <h2 className="text-pink-600 capitalize text-2xl font-semibold">Resources</h2>
+            <h2 className="text-pink-600 capitalize text-2xl font-semibold">
+              Resources
+            </h2>
             <ul className="text-gray-500 space-y-4 mt-3">
               <li className="hover:bg-white hover:text-gray-700 header-button">
                 <Link to="/">Authentication</Link>
@@ -76,7 +80,9 @@ const Footer = () => {
           </div>
 
           <div>
-            <h2 className="text-pink-600 capitalize text-2xl font-semibold">Developers</h2>
+            <h2 className="text-pink-600 capitalize text-2xl font-semibold">
+              Developers
+            </h2>
             <ul className="text-gray-500 space-y-4 mt-3">
               <li className="hover:bg-white hover:text-gray-700 header-button">
                 <Link to="">Documentation</Link>
@@ -99,7 +105,11 @@ const Footer = () => {
       </div>
       <div className="border-t border-gray-300 mt-14"></div>
       <div className="text-gray-500 mt-6 text-center sm:text-[18px]">
-        © 2022. All rights reserved by <span className="hover:text-pink-600 cursor-pointer">Rainbow-Themes</span>.
+        © 2022. All rights reserved by{" "}
+        <span className="hover:text-pink-600 cursor-pointer">
+          Rainbow-Themes
+        </span>
+        .
       </div>
     </footer>
   );

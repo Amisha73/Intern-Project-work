@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "../App.css"; 
+import React from "react";
+import "../App.css";
 
 const Skills = () => {
   const skillsData = {
@@ -39,7 +39,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className="p-6 mx-auto max-w-4xl">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h2 className="text-[14px] font-semibold text-pink-500 mb-4">

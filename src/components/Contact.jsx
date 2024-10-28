@@ -15,7 +15,7 @@ const Contact = () => {
           <form action="#" className="space-y-8">
             <div>
               <label
-                for="email"
+                htmlFor="email"
                 className="block mb-2 text-sm font-medium text-gray-900 "
               >
                 Your email
