@@ -11,7 +11,7 @@ import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import Blog from "./components/Blog";
 import ScrollToTop from "./components/ScrollToTop";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact"; 
 
 const App = () => {
   const homeRef = useRef(null);
@@ -55,42 +55,47 @@ const App = () => {
       <div className="bg-gray-50">
         <Header scrollToSection={scrollToSection} />
 
-        {/* Sections */}
-        <section ref={homeRef} id="home">
-          <Home />
-        </section>
-        <section ref={experienceRef} id="experience">
-          <Experience />
-        </section>
-        <section ref={educationRef} id="education">
-          <Education />
-        </section>
-        <section
-          ref={resumeRef}
-          id="resume"
-          className="flex justify-center items-center min-h-screen"
-        >
-          <Resume />
-        </section>
-        <section ref={portfolioRef} id="portfolio">
-          <Portfolio />
-        </section>
-        <section ref={blogRef} id="blog">
-          <Blog />
-        </section>
-        <section ref={footerRef} id="footer">
-          <Footer />
-        </section>
-        <ScrollToTop/>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                {/* Sections */}
+                <section ref={homeRef} id="home">
+                  <Home />
+                </section>
+                <section ref={experienceRef} id="experience">
+                  <Experience />
+                </section>
+                <section ref={educationRef} id="education">
+                  <Education />
+                </section>
+                <section
+                  ref={resumeRef}
+                  id="resume"
+                  className="flex justify-center items-center min-h-screen"
+                >
+                  <Resume />
+                </section>
+                <section ref={portfolioRef} id="portfolio">
+                  <Portfolio />
+                </section>
+                <section ref={blogRef} id="blog">
+                  <Blog />
+                </section>
+                <section ref={footerRef} id="footer">
+                  <Footer />
+                </section>
+              </>
+            }
+          />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+        <ScrollToTop />
       </div>
     </Router>
   );
 };
 
 export default App;
-
-{
-  /* <Routes>
-          <Route path="/contact" element={<Contact />} />
-     </Routes>  */
-}
